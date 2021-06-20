@@ -70,6 +70,7 @@ router.get("/edit/:id", withAuth, (req, res) => {
   
         // serialize the data
         const post = data.get({ plain: true });
+        // res.json(post)
   
         res.render("editPost", {
           post,
