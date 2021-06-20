@@ -1,3 +1,21 @@
 {{> postCard post}}
 
+{{#if logged_in}}
+    <form class="commentForm mb-3">
+        <div class="mb-3">
+           <textarea name="text" class="form-control" required  cols="20" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Comment</button>
+    </form>
+{{/if}}
+
 {{> commentBox post.comments}}
+
+{{#if logged_in}}
+<script src="/js/comment.js"></script>
+{{/if}}
+<script>
+    const viewPostBtn = document.querySelector(".post-card .card-body a")
+    viewPostBtn.classList.add("d-none")
+</script>
+

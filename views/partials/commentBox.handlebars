@@ -1,8 +1,15 @@
-<div class="card">
-    {{#each this}}
-    <article>
-        <h5>{{text}}</h5>
-        <p>created by {{user.username}} on {{created_at}}</p>
-    </article>
-    {{/each}}
-</div>
+{{#each this}}
+    <div class="card post-card my-3">
+        <div class="card-body">
+            <h5 class="card-title fw-bold">Created by {{user.username}} on {{format_date created_at}}</h5>
+            <p class="card-text">{{text}}</p>
+            {{#if isOwner}}
+            <form action="/api/comments/{{id}}?_method=DELETE" method="POST">
+                <button class="deleteComment btn btn-danger">Delete</button>
+            </form>
+            {{/if}}
+        </div>
+    </div>
+{{/each}}
+
+{{!-- <script src="/js/comment.js"></script> --}}

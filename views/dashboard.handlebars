@@ -1,0 +1,16 @@
+<section class="dashboard">
+    <a href="/dashboard/create" class="btn btn-success my-3">New Post</a>
+    {{#if posts.length}}
+        <div class="posts">
+            {{#each posts as |post|}}
+                <a href="/dashboard/edit/{{post.id}}" class="btn btn-warning">Edit Post</a>
+                <button class="deletePost btn btn-danger" id="{{post.id}}">Delete Post</button>
+                {{> postCard post}}
+            {{/each}}
+        </div>
+        {{else}}
+        <h2>You have no post created</h2>
+
+       {{/if}} 
+</section>
+<script src="/js/dashboard.js"></script>
