@@ -52,15 +52,22 @@ THEN you are automatically signed out of the site
 
 ## Mock-Up
 
-The following animation demonstrates the application functionality:
+The following images demonstrates the application functionality:
 
-<https://github.com/mskippen/14-Tech-Blog.git>
+Home
+![Home](./assets/home.PNG)
+Login
+![Login](./assets/login.PNG)
+Dashboard
+![Dashboard](./assets/dashboard.PNG)
+Post
+![Post](./assets/post.PNG)
 
 ## Links
 
-* The URL of the functional, deployed application:<>
+* The URL of the functional, deployed application: <https://news-blog-mskippen.herokuapp.com/>
 
-* The URL of the GitHub repository, with a unique name and a readme describing the post<https://github.com/mskippen/14-Tech-Blog.git>
+* The URL of the GitHub repository, with a unique name and a readme describing the post: <https://github.com/mskippen/14-News-Blog.git>
 
 ---
 © 2021 Project Agents Pty Ltd. All Rights Reserved.
